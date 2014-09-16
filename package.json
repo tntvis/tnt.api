@@ -1,0 +1,45 @@
+{
+  "name": "tnt.api",
+  "version": "0.0.0",
+  "description": "Api library for tnt",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "grunt test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/emepyc/tnt.api.git"
+  },
+  "keywords": [
+    "tnt",
+    "api"
+  ],
+  "author": "Miguel Pignatelli",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/emepyc/tnt.api/issues"
+  },
+  "homepage": "https://github.com/emepyc/tnt.api",
+  "devDependencies": {
+    "blanket": "^1.1.6",
+    "chai": "^1.9.1",
+    "grunt": "^0.4.5",
+    "grunt-contrib-jshint": "^0.10.0",
+    "grunt-mocha-cov": "^0.3.0",
+    "grunt-mocha-test": "^0.12.0",
+    "mocha": "^1.21.4"
+  },
+  "config": {
+    "blanket": {
+      "pattern": [
+        "src"
+      ]
+    },
+    "travis-cov": {
+      "threshold": 80
+    }
+  }
+}
