@@ -22,21 +22,21 @@ module.exports = function (grunt) {
 	    }
 	},
 
-	mochaTest : {
-	    test : {
-		options : {
-		    reporter : "spec"
-		},
-		src : ['test/**/*.js']
-	    }
-	}
+	// mochaTest : {
+	//     test : {
+	// 	options : {
+	// 	    reporter : "spec"
+	// 	},
+	// 	src : ['test/**/*.js']
+	//     }
+	// }
 
     });
 
     grunt.loadNpmTasks ('grunt-contrib-jshint');
     grunt.loadNpmTasks ('grunt-mocha-cov');
-    grunt.loadNpmTasks ('grunt-mocha-test');
+    // grunt.loadNpmTasks ('grunt-mocha-test');
 
     grunt.registerTask ('default', 'test');
-    grunt.registerTask ('test', ['jshint', 'mochaTest']);
+    grunt.registerTask ('test', ['jshint', 'mochacov']);
 };
