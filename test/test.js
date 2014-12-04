@@ -3,13 +3,13 @@ var assert = require("chai").assert;
 
 describe ("apijs", function () {
     it ("Exists and is a method", function () {
-	assert.isDefined(apijs.api);
-	assert.isFunction(apijs.api);
+	assert.isDefined(apijs);
+	assert.isFunction(apijs);
     });
 
     // Namespace to attach getters/setters
     var namespace = {};
-    var api = apijs.api(namespace);
+    var api = apijs(namespace);
 
     describe ("Getter/Setter", function () {
 	var props = {
