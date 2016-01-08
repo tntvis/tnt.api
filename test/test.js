@@ -1,4 +1,4 @@
-var apijs = require ("../src/api.js");
+var apijs = require ("../index.js");
 var assert = require("chai").assert;
 
 describe ("apijs", function () {
