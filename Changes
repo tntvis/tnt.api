@@ -2,3 +2,5 @@
 	Changed LICENSE to EMBL-EBI
 	Removed browserified version
 
+0.1.0
+	Fixed test script in package.json
