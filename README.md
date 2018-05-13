@@ -1,8 +1,8 @@
 # TnT API
 
-A sipmle javascript library to create api's for objects.
+A simple javascript library to create api's for objects.
 
-###Overview
+### Overview
 
 Given an object, <b>TnT API</b> generates <i>getters/setters</i> and methods on it.
 Consider the following example:
@@ -83,6 +83,7 @@ Getters can also be created using objects:
     });
 
 ### Checks
+
 </code>
 The library also exposes the <i>check</i> method to check the passed variables:
 <code>
@@ -135,7 +136,9 @@ Checks accept an extra argument with the error message:
     my_object.width({ w:100 }); // Throws 'Argument should be numeric'
 
 </code>
+
 ### Transformations
+
 api also exposes the <i>transform</i> method to make transformations on the passed values:
 <code>
 
@@ -204,7 +207,9 @@ Checks and transformations are chainable if used via the method interface:
         });
 
 </code>
+
 ### Methods
+
 The library also allows to defined methods (not <i>getters/setters</i>
 <code>
 
